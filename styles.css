@@ -1,3 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Chewy';
+  font-size: 10px;
+  text-align: center;
+}
+
 body {
   background-image: url('./img/teacher-classroom.png');
+  background-position: left center center;
+  background-repeat: no-repeat;
+  background-size: 73em;
+  overflow: hidden;
+}
+
+h1,
+h3,
+h4,
+p {
+  margin: 0.5em;
+}
+
+h1 {
+  color: rgb(52 193 158);
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 0.5em;
+}
+
+p {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.main {
+  position: absolute;
+  right: 1%;
+}
+
+header {
+  font-size: 3rem;
+  position: relative;
+  line-height: 1rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  min-height: fit-content;
+  padding-top: 2em;
+  position: relative;
+}
+
+.book {
+  transition: transform 0.2;
+}
+
+.book:hover {
+  transform: scale(1.2);
+}
+
+.book img {
+  width: 13em;
+  display: block;
+  margin: 0.5em;
+}
+
+footer {
+  width: 100vw;
+  height: 7em;
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  color: white;
 }
