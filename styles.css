@@ -105,13 +105,10 @@ header {
   scrollbar-width: none; /* Firefox */
 }
 
-.spanish-books-grid .book img {
-  margin: 0.5em;
-}
-
 .book {
   transition: transform 0.2;
   display: inline-block;
+  margin: 0.5em;
 }
 
 .book:hover {
